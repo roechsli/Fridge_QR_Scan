@@ -61,6 +61,7 @@
     QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
     
     const scanner = new QrScanner(video, result => { 
+    console.log("I am here");
     window.open("http://192.168.1.15/set_state1", "_self");
     
     console.log("Linkstuff", result, state);
