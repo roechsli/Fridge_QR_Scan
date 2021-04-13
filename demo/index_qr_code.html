@@ -10,7 +10,7 @@
         function set_state0() {
             var xhttp = new XMLHttpRequest();
             //xhttp.open("GET", "http://192.168.1.15/set_state0", true);
-            xhttp.open("GET", "http://172.20.10.2/set_state0", true);
+            xhttp.open("GET", "http://172.20.10.8/set_state0", true);
             xhttp.send();
         }
     </script>
@@ -64,7 +64,7 @@
     const scanner = new QrScanner(video, result => { 
     console.log("I am here");
     //window.open("http://192.168.1.15/set_state1", "_self");
-    window.open("http://172.20.10.2/set_state1", "_self");
+    window.open("http://172.20.10.8/set_state1", "_self");
     
     console.log("Linkstuff", result, state);
     scanner.stop();
